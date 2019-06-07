@@ -1,0 +1,60 @@
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+header {
+  display: flex;
+  text-decoration: none;
+  list-style: none; }
+  header a {
+    align-content: space-between;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900; }
+    header a:hover {
+      color: #fb7d68; }
+
+.banner-img {
+  width: 100%;
+  opacity: 0.9; }
+
+.name {
+  position: absolute;
+  top: 15vh;
+  left: 110px;
+  color: aliceblue;
+  font-size: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 1; }
+
+.parallax {
+  background-image: url("assets/apostles.jpg");
+  min-height: 1000px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9; }
+
+.content {
+  margin-top: 100px;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.bio {
+  position: absolute;
+  top: 30vh;
+  margin: 0 100px;
+  color: aliceblue;
+  font-size: 45px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  z-index: 1; }
