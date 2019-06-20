@@ -19,8 +19,22 @@ header {
         font-weight: 900;
 
         &:hover {
-            color: rgb(251, 125, 104);
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: hover;
         }
+    }
+}
+
+@keyframes hover {
+    0% {
+        color:#ffa99b;
+    }
+    50% {
+        color: #ff7760;
+    }
+    100% {
+        color:rgb(249, 147, 129);
     }
 }
 
@@ -29,10 +43,15 @@ header {
     opacity: 0.9;
 }
 
-.name {
+.floating-bio {
     position: absolute;
-    top: 15vh;
+    top: 40vh;
     left:110px;
+    width: 75vw;
+}
+
+.name {
+    position: relative;
     color: aliceblue;
     font-size: 80px;
     font-family: 'Montserrat', sans-serif;
@@ -41,8 +60,20 @@ header {
     z-index: 1;
 }
 
+.bio {
+    position: relative;
+    margin-top: 40px;
+    color: aliceblue;
+    font-size: 45px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    // font-family: 'Montserrat', sans-serif;
+    // font-weight: 300;
+    z-index: 1;
+}
+
 .parallax {
-    background-image: url('assets/apostles.jpg');
+    background-image: url('assets/apostles-crop.jpg');
     min-height: 1000px;
     width: 100%;
     background-attachment: fixed;
@@ -50,17 +81,18 @@ header {
     opacity: 0.9;
 }
 
-.project-header {
-    margin: 60px 0px;
+.project-title {
+    margin-top: 60px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.left-aside {
+.project-containers {
     display: flex;
     flex-direction: row;
+    margin: 60px 0px;
 }
 
 .content {
@@ -87,18 +119,10 @@ header {
         font-size: 35px;
         font-family: 'Work Sans', sans-serif;
         font-weight: 900;
+        width: 40vw;
     }
 }
 
-.bio {
-    position: absolute;
-    top: 30vh;
-    margin: 0 100px;
-    color: aliceblue;
-    font-size: 45px;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 900;
-    // font-family: 'Montserrat', sans-serif;
-    // font-weight: 300;
-    z-index: 1;
+.tweeter-img {
+    width: 50vw;
 }
