@@ -19,9 +19,9 @@ header {
         font-weight: 900;
 
         &:hover {
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            animation-name: hover;
+            -webkit-animation: hover 2s ease-in-out infinite alternate;
+            -moz-animation: hover 2s ease-in-out infinite alternate;
+            animation: hover 2s ease-in-out infinite alternate;
         }
     }
 }
@@ -29,12 +29,15 @@ header {
 @keyframes hover {
     0% {
         color:#ffa99b;
+        text-shadow: 0 0 40px #ff7760;
     }
     50% {
         color: #ff7760;
+        text-shadow: 0 0 20px rgb(231, 74, 74);
     }
     100% {
         color:rgb(249, 147, 129);
+        text-shadow: 0 0 40px #ff7760;
     }
 }
 
@@ -123,6 +126,6 @@ header {
     }
 }
 
-.tweeter-img {
+.screenshots {
     width: 50vw;
 }

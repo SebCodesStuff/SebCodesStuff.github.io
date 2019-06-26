@@ -16,17 +16,20 @@ header {
     font-family: 'Work Sans', sans-serif;
     font-weight: 900; }
     header a:hover {
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-name: hover; }
+      -webkit-animation: hover 2s ease-in-out infinite alternate;
+      -moz-animation: hover 2s ease-in-out infinite alternate;
+      animation: hover 2s ease-in-out infinite alternate; }
 
 @keyframes hover {
   0% {
-    color: #ffa99b; }
+    color: #ffa99b;
+    text-shadow: 0 0 40px #ff7760; }
   50% {
-    color: #ff7760; }
+    color: #ff7760;
+    text-shadow: 0 0 20px #e74a4a; }
   100% {
-    color: #f99381; } }
+    color: #f99381;
+    text-shadow: 0 0 40px #ff7760; } }
 
 .banner-img {
   width: 100%;
@@ -95,5 +98,5 @@ header {
     font-weight: 900;
     width: 40vw; }
 
-.tweeter-img {
+.screenshots {
   width: 50vw; }
