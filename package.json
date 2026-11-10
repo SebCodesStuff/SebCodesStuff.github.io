@@ -5,14 +5,14 @@
   "main": "index.html",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register test/ --recursive",
-    "build-css": "node-sass --include-path scss sass/main.scss main.css",
+    "build-css": "sass --no-source-map sass/main.scss main.css",
     "build": "babel src --out-dir build --ignore test,node_modules src && npm run build-css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "BrioVR",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.3",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "sass": "^1.108.1"
   }
 }
